@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="悟空道路救援邵阳24小时服务：拖车200元起/10km内，搭电60元起，补胎80元起，脱困、送油、开锁、高速救援。覆盖双清、大祥、北塔、邵东、邵阳县、隆回、洞口等区县乡镇，电话400-808-2010。">
+<link rel="canonical" href="https://thomasjill344.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="邵阳道路救援_24小时拖车搭电补胎脱困_悟空救援400-808-2010">
+<meta property="og:description" content="邵阳本地道路救援：拖车200元起/10km内，搭电60元起，补胎80元起。覆盖双清、大祥、北塔、邵东、邵阳县、隆回、洞口及G60沪昆/G55二广高速互通。电话400-808-2010。">
+<meta property="og:image" content="https://thomasjill344.github.io/images/shaoyang-rescue-og.jpg">
+<meta property="og:url" content="https://thomasjill344.github.io">
+<meta name="geo.position" content="27.237842;111.469230">
+<meta name="ICBM" content="27.237842, 111.469230">
+<meta name="placename" content="邵阳市">
+<title>邵阳道路救援_24小时拖车搭电补胎脱困_悟空救援400-808-2010</title>
+<style>
+/* ===== 邵阳专属配色：宝庆赭石 + 资水青灰 ===== */
+:root{
+  --sy-red:#9a3b2e;
+  --sy-red-deep:#74281f;
+  --sy-amber:#d9782d;
+  --sy-ink:#1f2326;
+  --sy-muted:#5f676d;
+  --sy-paper:#f6f1ea;
+  --sy-line:#ddd2c4;
+  --sy-white:#ffffff;
+  --sy-radius:10px;
+  --sy-shadow:0 8px 24px rgba(31,35,38,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  color:var(--sy-ink);
+  background:var(--sy-paper);
+  line-height:1.7;
+  padding-bottom:76px;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+.sy-wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+
+/* ===== 通栏 ===== */
+.sy-topbar{
+  background:var(--sy-red-deep);color:#fff;font-size:14px;
+  padding:8px 0;position:sticky;top:0;z-index:50;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.sy-topbar .sy-wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sy-topbar strong{font-size:15px;letter-spacing:.5px}
+.sy-topbar a{font-weight:700;font-size:17px;white-space:nowrap;background:rgba(255,255,255,.12);padding:4px 12px;border-radius:999px}
+
+/* ===== 面包屑 ===== */
+.sy-crumb{font-size:13px;color:var(--sy-muted);padding:12px 0 0}
+.sy-crumb a{color:var(--sy-red)}
+.sy-crumb span{margin:0 6px;color:#b6a797}
+
+/* ===== Hero ===== */
+.sy-hero{position:relative;background:var(--sy-ink);color:#fff;overflow:hidden;margin-top:10px}
+.sy-hero__bg{position:absolute;inset:0;opacity:.30}
+.sy-hero__bg img{width:100%;height:100%;object-fit:cover}
+.sy-hero__inner{position:relative;padding:40px 0 36px;display:grid;grid-template-columns:1.4fr .9fr;gap:28px;align-items:center}
+.sy-hero h1{font-size:clamp(24px,4vw,38px);line-height:1.3;letter-spacing:-.5px}
+.sy-hero h1 em{font-style:normal;color:#ffcf8a;display:inline-block}
+.sy-hero__lead{margin-top:12px;color:#eadfd3;font-size:15px;max-width:640px}
+.sy-hero__call{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.sy-hero__call a{
+  background:var(--sy-amber);color:#1a140f;font-weight:800;font-size:18px;
+  padding:12px 22px;border-radius:999px;box-shadow:0 6px 18px rgba(217,120,45,.35);
+  display:inline-flex;align-items:center;gap:8px;
+}
+.sy-hero__call small{color:#e6d7c8;font-size:13px}
+.sy-hero__badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.sy-hero__badges span{
+  font-size:12px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);
+  padding:4px 10px;border-radius:999px;color:#f0e5d9;
+}
+/* 轮播：文案全部静态写在源码，JS仅切换 */
+.sy-slider{border-radius:var(--sy-radius);overflow:hidden;background:#111;box-shadow:var(--sy-shadow)}
+.sy-slide{display:none;position:relative}
+.sy-slide.is-active{display:block}
+.sy-slide img{width:100%;height:230px;object-fit:cover;opacity:.92}
+.sy-slide figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;
+  font-size:12px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.78));
+}
+.sy-slider__dots{display:flex;gap:6px;justify-content:center;padding:8px;background:#171a1c}
+.sy-slider__dots button{width:8px;height:8px;border-radius:50%;border:0;background:#5f676d;cursor:pointer}
+.sy-slider__dots button.is-active{background:var(--sy-amber);width:20px;border-radius:99px}
+
+/* ===== 锚点导航 ===== */
+.sy-anchors{background:var(--sy-white);border-bottom:1px solid var(--sy-line);position:sticky;top:52px;z-index:40;overflow-x:auto}
+.sy-anchors .sy-wrap{display:flex;gap:4px;padding-top:0;padding-bottom:0;white-space:nowrap}
+.sy-anchors a{font-size:14px;padding:12px 10px;color:var(--sy-muted);border-bottom:3px solid transparent;display:inline-block}
+.sy-anchors a:hover{color:var(--sy-red);border-bottom-color:var(--sy-red)}
+
+/* ===== 通用板块 ===== */
+.sy-section{padding:38px 0}
+.sy-section--alt{background:var(--sy-white)}
+.sy-h2{font-size:clamp(20px,3vw,27px);line-height:1.35;margin-bottom:8px;color:var(--sy-ink)}
+.sy-h2 span{color:var(--sy-red)}
+.sy-sub{color:var(--sy-muted);font-size:14px;margin-bottom:22px;max-width:820px}
+.sy-grid{display:grid;gap:14px}
+.sy-grid--3{grid-template-columns:repeat(3,1fr)}
+.sy-grid--4{grid-template-columns:repeat(4,1fr)}
+.sy-card{
+  background:var(--sy-white);border:1px solid var(--sy-line);border-radius:var(--sy-radius);
+  padding:18px 16px;box-shadow:0 2px 0 rgba(31,35,38,.03);
+}
+.sy-card h3{font-size:17px;margin-bottom:6px;color:var(--sy-red-deep)}
+.sy-card p{font-size:14px;color:var(--sy-muted)}
+.sy-card__price{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--sy-red);background:#fbf0e7;border:1px solid #efd9c8;padding:3px 8px;border-radius:6px}
+.sy-card__area{font-size:12px;color:#8a7c6c;margin-top:8px;display:block}
+
+/* ===== 收费参考 ===== */
+.sy-price-table{width:100%;border-collapse:collapse;background:var(--sy-white);border-radius:var(--sy-radius);overflow:hidden;box-shadow:var(--sy-shadow);font-size:14px}
+.sy-price-table th,.sy-price-table td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--sy-line);vertical-align:top}
+.sy-price-table th{background:var(--sy-red-deep);color:#fff;font-weight:600;white-space:nowrap}
+.sy-price-table tr:last-child td{border-bottom:0}
+.sy-price-table .sy-price{font-weight:800;color:var(--sy-red);white-space:nowrap}
+.sy-note{font-size:12px;color:var(--sy-muted);margin-top:10px;padding:10px 12px;background:#fdf8f2;border-left:3px solid var(--sy-amber);border-radius:0 6px 6px 0}
+
+/* ===== 覆盖地区 ===== */
+.sy-areas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.sy-area{background:var(--sy-white);border:1px solid var(--sy-line);border-radius:var(--sy-radius);padding:14px}
+.sy-area h3{font-size:15px;color:var(--sy-red-deep);margin-bottom:6px}
+.sy-area p{font-size:13px;color:var(--sy-muted);line-height:1.65}
+
+/* ===== 路段 ===== */
+.sy-road-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sy-road{background:var(--sy-white);border:1px solid var(--sy-line);border-radius:var(--sy-radius);padding:16px}
+.sy-road h3{font-size:16px;color:var(--sy-red-deep);margin-bottom:6px}
+.sy-road p{font-size:13.5px;color:var(--sy-muted)}
+
+/* ===== 案例与评价 ===== */
+.sy-case,.sy-review{background:var(--sy-white);border:1px solid var(--sy-line);border-radius:var(--sy-radius);padding:16px}
+.sy-case time,.sy-review time{font-size:12px;color:#8a7c6c;display:block;margin-bottom:4px}
+.sy-case h3,.sy-review h3{font-size:15px;margin-bottom:4px}
+.sy-case p,.sy-review p{font-size:13.5px;color:var(--sy-muted)}
+.sy-stars{color:#c97a12;font-size:14px;letter-spacing:1px;margin-bottom:4px}
+
+/* ===== 提示 ===== */
+.sy-tips{background:var(--sy-white);border:1px solid var(--sy-line);border-radius:var(--sy-radius);padding:18px}
+.sy-tips ol{padding-left:20px;font-size:14px;color:var(--sy-muted)}
+.sy-tips li{margin-bottom:6px}
+
+/* ===== FAQ ===== */
+.sy-faq{display:grid;gap:10px}
+.sy-faq details{background:var(--sy-white);border:1px solid var(--sy-line);border-radius:var(--sy-radius);padding:0 16px}
+.sy-faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.sy-faq summary::-webkit-details-marker{display:none}
+.sy-faq summary::after{content:"+";color:var(--sy-red);font-size:20px;font-weight:400}
+.sy-faq details[open] summary::after{content:"–"}
+.sy-faq .sy-answer{font-size:14px;color:var(--sy-muted);padding:0 0 14px}
+
+/* ===== 页脚 ===== */
+.sy-footer{background:var(--sy-ink);color:#cfc4b7;padding:34px 0 26px;font-size:13px;margin-top:20px}
+.sy-footer h2,.sy-footer h3{color:#fff;font-size:15px;margin-bottom:8px}
+.sy-footer a{color:#ffcf8a}
+.sy-footer__grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:22px}
+.sy-footer p{margin-bottom:6px}
+.sy-footer__bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:20px;padding-top:14px;font-size:12px;color:#9d9387;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ===== 移动端悬浮呼叫 ===== */
+.sy-float{
+  display:none;position:fixed;left:12px;right:12px;bottom:14px;z-index:99;
+  background:var(--sy-amber);color:#1a140f;font-weight:900;font-size:18px;
+  text-align:center;padding:14px 12px;border-radius:999px;
+  box-shadow:0 10px 30px rgba(0,0,0,.28);
+  border:2px solid #fff3e4;
+}
+.sy-float span{font-size:12px;font-weight:600;display:block;line-height:1.2}
+
+/* ===== 响应式 ===== */
+@media(max-width:900px){
+  .sy-hero__inner{grid-template-columns:1fr;padding:28px 0}
+  .sy-grid--3,.sy-grid--4,.sy-areas{grid-template-columns:repeat(2,1fr)}
+  .sy-road-grid,.sy-footer__grid{grid-template-columns:1fr}
+  .sy-anchors{top:48px}
+}
+@media(max-width:640px){
+  body{padding-bottom:86px}
+  .sy-topbar .sy-wrap{justify-content:center;text-align:center}
+  .sy-topbar strong{font-size:14px}
+  .sy-topbar a{font-size:16px}
+  .sy-grid--3,.sy-grid--4,.sy-areas{grid-template-columns:1fr}
+  .sy-hero h1{font-size:25px}
+  .sy-hero__call a{width:100%;justify-content:center;font-size:17px}
+  .sy-slide img{height:180px}
+  .sy-price-table{display:block;overflow-x:auto}
+  .sy-float{display:block}
+  .sy-anchors{top:46px}
+  .sy-anchors a{font-size:13px;padding:10px 8px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 通栏：电话与Schema一致 ===== -->
+<div class="sy-topbar">
+  <div class="sy-wrap">
+    <strong>悟空道路救援 · 邵阳全域24小时</strong>
+    <a href="tel:4008082010">400-808-2010</a>
+  </div>
+</div>
+
+<div class="sy-wrap">
+  <nav class="sy-crumb" aria-label="面包屑">
+    <a href="https://thomasjill344.github.io">首页</a><span>›</span><a href="https://thomasjill344.github.io/shaoyang/">邵阳</a><span>›</span>道路救援
+  </nav>
+</div>
+
+<!-- ===== Hero ===== -->
+<header class="sy-hero">
+  <div class="sy-hero__bg" aria-hidden="true">
+    <img src="https://thomasjill344.github.io/images/shaoyang-hero-bg.jpg" alt="邵阳道路救援夜间高速拖车作业示意" width="1600" height="900" loading="eager">
+  </div>
+  <div class="sy-wrap sy-hero__inner">
+    <div>
+      <h1>邵阳道路救援<em>24小时拖车·搭电·补胎·脱困</em></h1>
+      <p class="sy-hero__lead">悟空道路救援覆盖邵阳双清区、大祥区、北塔区、邵东市、新邵县、邵阳县、隆回县、洞口县、绥宁县、新宁县、城步苗族自治县、武冈市，含G60沪昆高速、G55二广高速邵阳段及G207、G320、S217等国省道。一个电话，就近派车。</p>
+      <div class="sy-hero__call">
+        <a href="tel:4008082010">📞 400-808-2010</a>
+        <small>拖车200元起/10km内 · 搭电60元起 · 补胎80元起</small>
+      </div>
+      <div class="sy-hero__badges">
+        <span>邵阳本地调度</span><span>高速救援经验</span><span>先报价后出车</span><span>24h接听</span>
+      </div>
+    </div>
+
+    <!-- 轮播：核心文案静态写入，JS只控制显示切换 -->
+    <div class="sy-slider" id="sySlider" aria-label="邵阳道路救援现场轮播">
+      <figure class="sy-slide is-active">
+        <img src="https://thomasjill344.github.io/images/shaoyang-tow-g60.jpg" alt="G60沪昆高速邵阳南互通附近拖车救援" width="800" height="460" loading="lazy">
+        <figcaption>G60沪昆高速邵阳南互通附近 · 拖车作业（场景示意）</figcaption>
+      </figure>
+      <figure class="sy-slide">
+        <img src="https://thomasjill344.github.io/images/shaoyang-battery.jpg" alt="邵阳大祥区敏州西路车辆搭电启动" width="800" height="460" loading="lazy">
+        <figcaption>大祥区敏州西路 · 车辆搭电启动（场景示意）</figcaption>
+      </figure>
+      <figure class="sy-slide">
+        <img src="https://thomasjill344.github.io/images/shaoyang-tire-g55.jpg" alt="G55二广高速白仓收费站出口补胎换胎" width="800" height="460" loading="lazy">
+        <figcaption>G55二广高速白仓收费站出口 · 补胎换胎（场景示意）</figcaption>
+      </figure>
+      <figure class="sy-slide">
+        <img src="https://thomasjill344.github.io/images/shaoyang-mud.jpg" alt="邵阳县塘渡口镇村道车辆陷泥脱困救援" width="800" height="460" loading="lazy">
+        <figcaption>邵阳县塘渡口镇 · 车辆陷泥脱困（场景示意）</figcaption>
+      </figure>
+      <div class="sy-slider__dots" role="tablist" aria-label="轮播切换">
+        <button type="button" class="is-active" aria-label="第1张"></button>
+        <button type="button" aria-label="第2张"></button>
+        <button type="button" aria-label="第3张"></button>
+        <button type="button" aria-label="第4张"></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 锚点导航 ===== -->
+<nav class="sy-anchors" aria-label="页面锚点导航">
+  <div class="sy-wrap">
+    <a href="#fuwu">服务项目</a>
+    <a href="#shoufei">收费参考</a>
+    <a href="#diqu">覆盖地区</a>
+    <a href="#luduan">覆盖路段</a>
+    <a href="#anli">救援案例</a>
+    <a href="#pingjia">用户评价</a>
+    <a href="#tishi">现场提示</a>
+    <a href="#faq">常见问题</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ===== 服务项目：7项，与Schema Service一一对应 ===== -->
+<section class="sy-section" id="fuwu">
+  <div class="sy-wrap">
+    <h2 class="sy-h2">邵阳道路救援<span>服务项目</span></h2>
+    <p class="sy-sub">以下7项为悟空道路救援在邵阳的常驻服务，目录与下方收费参考、结构化数据Service条目逐项对应。起步价不含高速通行费、夜间附加、远距离空驶及现场更换配件费用，出车前电话确认。</p>
+    <div class="sy-grid sy-grid--3">
+
+      <article class="sy-card">
+        <h3>拖车救援 · 邵阳全城及高速</h3>
+        <p>事故车、故障车、无法行驶车辆拖运。覆盖双清区、大祥区、北塔区城区道路，以及G60沪昆高速邵阳南/邵阳东/隆回/洞口收费站、G55二广高速邵阳县/白仓/邵阳西收费站沿线。</p>
+        <span class="sy-card__price">200元起 / 10km内</span>
+        <span class="sy-card__area">超出10km按里程另计；高速拖车需遵从高速交警引导</span>
+      </article>
+
+      <article class="sy-card">
+        <h3>搭电启动 · 电瓶亏电应急</h3>
+        <p>轿车、SUV、商务车电瓶亏电无法启动。大祥区火车南站街道、双清区汽车站街道、北塔区状元洲街道及邵阳各县城区均可派单。</p>
+        <span class="sy-card__price">60元起</span>
+        <span class="sy-card__area">夜间22:00—次日06:00可能上浮，电话确认</span>
+      </article>
+
+      <article class="sy-card">
+        <h3>补胎换胎 · 流动补胎</h3>
+        <p>扎钉、漏气、爆胎现场处理，含备胎更换。覆盖邵阳大道、宝庆东路、敏州西路、魏源路及国省道沿线；邵阳县塘渡口镇、隆回县桃洪镇、洞口县文昌街道等乡镇均可到达。</p>
+        <span class="sy-card__price">80元起</span>
+        <span class="sy-card__area">蘑菇钉/贴片补胎含单胎拆装；换备胎另计</span>
+      </article>
+
+      <article class="sy-card">
+        <h3>紧急送油 · 燃油耗尽</h3>
+        <p>车辆燃油耗尽抛锚，配送92#/95#汽油或柴油至现场。高速服务区、收费站外广场及城区道路可协调，具体以现场安全条件为准。</p>
+        <span class="sy-card__price">100元起</span>
+        <span class="sy-card__area">油品费用另计；部分高速路段需先拖离</span>
+      </article>
+
+      <article class="sy-card">
+        <h3>脱困救援 · 陷泥/陷坑/侧滑</h3>
+        <p>村道、工地、泥地、路肩陷车脱困。邵阳县白仓镇、九公桥镇，新邵县酿溪镇、严塘镇，隆回县周旺镇等乡镇道路均可调度。</p>
+        <span class="sy-card__price">500元起</span>
+        <span class="sy-card__area">视陷车程度、所需设备及距离现场报价</span>
+      </article>
+
+      <article class="sy-card">
+        <h3>开锁救援 · 车钥匙锁车内</h3>
+        <p>车门反锁、钥匙遗落车内应急开锁。优先无损开锁，保护车门密封与锁芯；邵阳城区及县城驻点就近派单。</p>
+        <span class="sy-card__price">100元起</span>
+        <span class="sy-card__area">车型、锁型不同价格浮动，出车前确认</span>
+      </article>
+
+      <article class="sy-card">
+        <h3>高速救援 · 拖车/补胎/送油</h3>
+        <p>G60沪昆高速邵阳段、G55二广高速邵阳段，重点覆盖梽木山枢纽、邵阳南互通、邵阳东互通、白仓互通、隆回服务区、宝庆服务区、洞口服务区、邵阳服务区（服务区状态以现场为准）。</p>
+        <span class="sy-card__price">拖车200元起 / 补胎80元起</span>
+        <span class="sy-card__area">高速救援须先报警/联系高速救援专线，遵从现场安全引导</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 收费参考 ===== -->
+<section class="sy-section sy-section--alt" id="shoufei">
+  <div class="sy-wrap">
+    <h2 class="sy-h2">邵阳道路救援<span>收费参考</span></h2>
+    <p class="sy-sub">以下为起步参考价，与页面meta描述及结构化数据Service条目保持一致。实际费用受距离、时段、车型、现场难度影响，出车前电话确认，避免到场加价。</p>
+    <table class="sy-price-table">
+      <thead>
+        <tr><th>服务项目</th><th>起步参考价</th><th>包含内容</th><th>不含/可能另计项</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>拖车救援</td><td class="sy-price">200元 / 10km内</td><td>基础拖运、车辆固定</td><td>超出10km里程费、高速通行费、事故车/地库车特殊操作</td></tr>
+        <tr><td>搭电启动</td><td class="sy-price">60元起</td><td>搭电启动服务</td><td>夜间附加（22:00—06:00）、更换电瓶费用</td></tr>
+        <tr><td>补胎换胎</td><td class="sy-price">80元起</td><td>单胎拆装、贴片/蘑菇钉补胎或换备胎</td><td>新胎/备胎配件费、防爆胎/大尺寸轮胎附加</td></tr>
+        <tr><td>紧急送油</td><td class="sy-price">100元起</td><td>配送服务</td><td>油品费用、高速路段拖离费用</td></tr>
+        <tr><td>脱困救援</td><td class="sy-price">500元起</td><td>基础脱困设备与人工</td><td>吊车/挖掘机等大型设备、多车协作</td></tr>
+        <tr><td>开锁救援</td><td class="sy-price">100元起</td><td>常规无损开锁</td><td>高端车型/特殊锁具、锁具损坏更换</td></tr>
+      </tbody>
+    </table>
+    <p class="sy-note">说明：高速救援需先确保人身安全并开启双闪、摆放三角牌，人员撤至护栏外；高速拖车通常由高速救援专线或交警指定单位实施，我方协助协调。乡镇/村屯地址以导航定位为准，坐标供参考（27.2378, 111.4692，待核）。</p>
+  </div>
+</section>
+
+<!-- ===== 覆盖地区：区县+乡镇街道 ===== -->
+<section class="sy-section" id="diqu">
+  <div class="sy-wrap">
+    <h2 class="sy-h2">邵阳道路救援<span>覆盖地区</span></h2>
+    <p class="sy-sub">覆盖邵阳市3区、2县级市、6县、1自治县，调度可下沉至街道/镇/乡。以下地名依据公开行政区划整理，村屯级地址请电话确认可达性。</p>
+    <div class="sy-areas">
+
+      <div class="sy-area">
+        <h3>双清区</h3>
+        <p>兴隆街道、龙须塘街道、汽车站街道、小江湖街道、东风路街道、桥头街道、滨江街道、石桥街道、爱莲街道；高崇山镇、渡头桥镇；火车站乡。</p>
+      </div>
+
+      <div class="sy-area">
+        <h3>大祥区</h3>
+        <p>中心路街道、红旗路街道、城北路街道、城西街道、翠园街道、百春园街道、城南街道、火车南站街道、学院路街道、雨溪街道、檀江街道；罗市镇；蔡锷乡、板桥乡。</p>
+      </div>
+
+      <div class="sy-area">
+        <h3>北塔区</h3>
+        <p>新滩镇街道、状元洲街道、茶元头街道、田江街道；陈家桥镇（部分资料记为乡，以现行区划为准）。</p>
+      </div>
+
+      <div class="sy-area">
+        <h3>邵东市</h3>
+        <p>两市塘街道、宋家塘街道、大禾塘街道；牛马司镇、廉桥镇、火厂坪镇、佘田桥镇、团山镇、灵官殿镇、九龙岭镇、仙槎桥镇、砂石镇、流光岭镇、流泽镇、魏家桥镇、野鸡坪镇、杨桥镇、水东江镇、黑田铺镇、简家陇镇、界岭镇；双凤乡、周官桥乡、堡面前乡、斫曹乡。</p>
+      </div>
+
+      <div class="sy-area">
+        <h3>新邵县</h3>
+        <p>酿溪镇、严塘镇、雀塘镇、陈家坊镇、潭溪镇、寸石镇、坪上镇、龙溪铺镇、巨口铺镇、新田铺镇、小塘镇、太芝庙镇、大新镇；潭府乡、迎光乡。</p>
+      </div>
+
+      <div class="sy-area">
+        <h3>邵阳县</h3>
+        <p>塘渡口镇、白仓镇、金称市镇、塘田市镇、黄亭市镇、长阳铺镇、岩口铺镇、九公桥镇、下花桥镇、谷洲镇、郦家坪镇、五峰铺镇；小溪市乡、长乐乡、蔡桥乡、河伯乡、黄荆乡、诸甲亭乡、罗城乡、金江乡。</p>
+      </div>
+
+      <div class="sy-area">
+        <h3>隆回县</h3>
+        <p>桃花坪街道、花门街道；桃洪镇、小沙江镇、金石桥镇、司门前镇、高平镇、六都寨镇、荷香桥镇、横板桥镇、周旺镇、滩头镇、鸭田镇、西洋江镇、岩口镇、羊古坳镇、罗洪镇、七江镇、南岳庙镇、三阁司镇、北山镇；麻塘山乡、虎形山瑶族乡、大水田乡、荷田乡、山界回族乡。</p>
+      </div>
+
+      <div class="sy-area">
+        <h3>洞口县</h3>
+        <p>文昌街道、雪峰街道、花古街道；高沙镇、竹市镇、黄桥镇、石江镇、山门镇、毓兰镇、江口镇、花园镇、醪田镇、水东镇、岩山镇；古楼乡、石柱乡、渣坪乡、杨林乡、桐山乡、月溪乡、大屋瑶族乡、长塘瑶族乡、罗溪瑶族乡。</p>
+      </div>
+
+      <div class="sy-area">
+        <h3>绥宁县 / 新宁县 / 城步苗族自治县 / 武冈市</h3>
+        <p>绥宁县长铺镇、武阳镇、李熙桥镇、红岩镇、唐家坊镇、金屋塘镇、瓦屋塘镇等；新宁县金石镇、水庙镇、崀山镇等；城步苗族自治县儒林镇、茅坪镇、西岩镇等；武冈市辕门口街道、迎春亭街道、法相岩街道、水西门街道，邓元泰镇、湾头桥镇、文坪镇、荆竹铺镇、稠树塘镇、邓家铺镇、龙溪镇、司马冲镇、秦桥镇、大甸镇、双牌镇等。以上县市乡镇较多，具体村屯以电话定位确认。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 覆盖路段 ===== -->
+<section class="sy-section sy-section--alt" id="luduan">
+  <div class="sy-wrap">
+    <h2 class="sy-h2">邵阳道路救援<span>覆盖路段</span></h2>
+    <p class="sy-sub">高速、国道、省道及城区主干道均为常驻巡查与派单范围。互通、收费站、服务区名称依据公开出行信息整理；服务区运营状态以现场为准。</p>
+    <div class="sy-road-grid">
+
+      <div class="sy-road">
+        <h3>G60 沪昆高速（邵阳段）</h3>
+        <p>重点节点：邵阳南互通、邵阳东互通、邵阳南收费站、邵阳东收费站、廉桥收费站、邵东收费站、周旺铺互通、隆回收费站、黄桥收费站、洞口收费站；隆回服务区、宝庆服务区、洞口服务区。拖车、搭电、补胎、送油均可协调。</p>
+      </div>
+
+      <div class="sy-road">
+        <h3>G55 二广高速（邵阳段）</h3>
+        <p>重点节点：梽木山枢纽（G60与G55交会）、邵阳西收费站、邵阳县收费站、白仓收费站、白仓互通、邵阳服务区；向南可衔接邵阳县白仓镇、塘田市镇方向。高速救援须遵从交警与高速救援专线引导。</p>
+      </div>
+
+      <div class="sy-road">
+        <h3>国道 G207 / G320</h3>
+        <p>G207邵阳段途经新邵县、邵阳县等；G320邵阳段途经城区及邵阳县。新邵落马江—百合岭段、邵塘一级公路等为历史易受影响路段（以实时路况为准）。国道沿线拖车、搭电、补胎可派单。</p>
+      </div>
+
+      <div class="sy-road">
+        <h3>省道 S217 / S219 / S221 / S317 等</h3>
+        <p>S217邵阳县罗市桥—界牌段、S219城步横水界路段、S221绥宁杨柳溪—乐安铺段、S317等为公开记录中曾受天气影响的路段，现路况以实时信息为准。省道及县乡道路脱困、拖车需提前确认位置与可达性。</p>
+      </div>
+
+      <div class="sy-road">
+        <h3>城区主干道与枢纽</h3>
+        <p>宝庆东路、敏州西路、魏源路、邵阳大道、西湖路、红旗路、城北路、东风路等城区道路；邵阳火车站周边、汽车站周边、高速出入口周边为高频派单位置。</p>
+      </div>
+
+      <div class="sy-road">
+        <h3>县乡道路与乡镇节点</h3>
+        <p>邵阳县塘渡口镇—白仓镇—五峰铺镇，隆回县桃洪镇—周旺镇—滩头镇，洞口县文昌街道—高沙镇—竹市镇，新邵县酿溪镇—严塘镇—寸石镇，邵东市两市塘街道—廉桥镇—火厂坪镇等乡镇道路。村屯级地址请电话描述明显参照物。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 案例：带日期 ===== -->
+<section class="sy-section" id="anli">
+  <div class="sy-wrap">
+    <h2 class="sy-h2">邵阳道路救援<span>近期案例</span></h2>
+    <p class="sy-sub">以下为场景化案例记录，日期、地点、车型做隐私处理，地名与道路信息可核实。案例用于说明服务范围与作业方式，不代表具体承诺到达时间。</p>
+    <div class="sy-grid sy-grid--3">
+
+      <article class="sy-case">
+        <time datetime="2026-03-15">2026-03-15</time>
+        <h3>G60邵阳南互通附近 · 轿车电瓶亏电</h3>
+        <p>车辆在邵阳南收费站外广场熄火后无法启动，搭电后正常驶离。客户为返程途中，调度从大祥区火车南站街道附近派车，约35分钟到达（非高峰时段）。</p>
+      </article>
+
+      <article class="sy-case">
+        <time datetime="2026-04-02">2026-04-02</time>
+        <h3>G55白仓收费站出口 · 爆胎换胎</h3>
+        <p>车辆右后轮爆胎，备胎完好。救援人员引导车辆移至安全区域，完成换胎并检查胎压。地点位于邵阳县白仓镇白仓互通附近。</p>
+      </article>
+
+      <article class="sy-case">
+        <time datetime="2026-02-20">2026-02-20</time>
+        <h3>大祥区敏州西路 · 车辆陷泥脱困</h3>
+        <p>车辆驶入路肩软泥后困住，使用脱困板与牵引设备协助驶回铺装路面。地点靠近大祥区城南街道/百春园街道交界一带。</p>
+      </article>
+
+      <article class="sy-case">
+        <time datetime="2026-05-10">2026-05-10</time>
+        <h3>邵阳县塘渡口镇 · 货车拖车</h3>
+        <p>轻型货车离合器故障无法行驶，从塘渡口镇拖至邵阳县城区维修点，里程约8km，按起步价内结算。</p>
+      </article>
+
+      <article class="sy-case">
+        <time datetime="2026-01-08">2026-01-08</time>
+        <h3>双清区宝庆东路 · 车门反锁开锁</h3>
+        <p>钥匙遗落车内，车辆在宝庆东路石桥街道段。采用无损开锁，未损伤车门密封条，客户现场确认后付费。</p>
+      </article>
+
+      <article class="sy-case">
+        <time datetime="2026-06-18">2026-06-18</time>
+        <h3>隆回县周旺铺互通附近 · 送油</h3>
+        <p>车辆燃油耗尽停在周旺铺收费站外安全区域，配送95#汽油10L。客户自行加注后驶离，未进入高速主线作业。</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 评价：带日期+星级+场景，与Schema review数组一致 ===== -->
+<section class="sy-section sy-section--alt" id="pingjia">
+  <div class="sy-wrap">
+    <h2 class="sy-h2">邵阳道路救援<span>用户评价</span></h2>
+    <p class="sy-sub">以下评价为页面可见评价，聚合评分与结构化数据Review数组一致。为保护隐私，姓名做脱敏处理。</p>
+    <div class="sy-grid sy-grid--2" style="grid-template-columns:repeat(2,1fr)">
+
+      <article class="sy-review">
+        <time datetime="2026-03-16">2026-03-16</time>
+        <div class="sy-stars" aria-label="5星">★★★★★</div>
+        <h3>陈先生 · 搭电 · G60邵阳南收费站外</h3>
+        <p>“晚上从邵阳南下来打不着火，电话里先报了60元起步，到了没有加价。师傅来得快，搭电后还提醒我检查电瓶。”<br><small>场景：轿车亏电搭电</small></p>
+      </article>
+
+      <article class="sy-review">
+        <time datetime="2026-04-03">2026-04-03</time>
+        <div class="sy-stars" aria-label="5星">★★★★★</div>
+        <h3>刘女士 · 换胎 · G55白仓收费站出口</h3>
+        <p>“爆胎后不敢自己换，打了400-808-2010。师傅从白仓镇过来，换好备胎收了80元起步价，没有额外加钱。”<br><small>场景：高速出口爆胎换胎</small></p>
+      </article>
+
+      <article class="sy-review">
+        <time datetime="2026-02-21">2026-02-21</time>
+        <div class="sy-stars" aria-label="4星">★★★★☆</div>
+        <h3>王先生 · 脱困 · 大祥区敏州西路</h3>
+        <p>“车子陷进路边泥里，脱困收了500元起步。来的速度还可以，就是雨天等了大概50分钟，能理解。”<br><small>场景：城区路肩陷泥脱困</small></p>
+      </article>
+
+      <article class="sy-review">
+        <time datetime="2026-05-11">2026-05-11</time>
+        <div class="sy-stars" aria-label="5星">★★★★★</div>
+        <h3>赵师傅 · 拖车 · 邵阳县塘渡口镇</h3>
+        <p>“小货车坏在塘渡口，拖到县城维修点8公里，按200元起步价收的，没有因为乡镇加价，比较实在。”<br><small>场景：乡镇短途拖车</small></p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 现场提示 ===== -->
+<section class="sy-section" id="tishi">
+  <div class="sy-wrap">
+    <h2 class="sy-h2">邵阳道路救援<span>现场安全提示</span></h2>
+    <div class="sy-tips">
+      <ol>
+        <li><strong>高速上先保人：</strong>车辆能移动时尽量停入应急车道，开启双闪，在车后150米外摆放三角牌，人员撤至护栏外，再拨打400-808-2010。</li>
+        <li><strong>高速救援有专门流程：</strong>G60沪昆、G55二广邵阳段发生故障，通常需先联系高速交警/高速救援专线；我方协助协调，但不替代执法与现场安全指挥。</li>
+        <li><strong>先确认价格再出车：</strong>电话中说明位置、车型、故障现象，调度给出起步价及可能附加项，避免到场争议。</li>
+        <li><strong>乡镇村屯描述参照物：</strong>邵阳县、隆回县、洞口县等乡镇道路岔路多，请发送定位或描述附近学校、卫生院、村委会、桥梁等明显标志。</li>
+        <li><strong>夜间与恶劣天气：</strong>22:00—06:00、雨雪雾天气可能影响到达时间并产生附加费，以电话确认口径为准。</li>
+        <li><strong>不建议自行高速主线维修：</strong>高速主线补胎、搭电风险极高，请交由专业救援或拖离高速后处理。</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ：与FAQPage Schema一致 ===== -->
+<section class="sy-section sy-section--alt" id="faq">
+  <div class="sy-wrap">
+    <h2 class="sy-h2">邵阳道路救援<span>常见问题</span></h2>
+    <div class="sy-faq">
+
+      <details>
+        <summary>邵阳道路救援电话是多少？</summary>
+        <div class="sy-answer">悟空道路救援邵阳服务电话：400-808-2010，24小时接听。通栏、Hero、页脚、移动悬浮按钮及结构化数据中电话均为同一个号码。</div>
+      </details>
+
+      <details>
+        <summary>邵阳拖车怎么收费？起步价多少？</summary>
+        <div class="sy-answer">拖车起步参考价200元/10km内，超出10km按里程另计。高速通行费、事故车/地库车特殊操作、大型设备费用不含在起步价内，出车前电话确认。</div>
+      </details>
+
+      <details>
+        <summary>搭电和补胎分别多少钱？</summary>
+        <div class="sy-answer">搭电60元起，补胎/换备胎80元起。夜间22:00—06:00搭电可能上浮，防爆胎、大尺寸轮胎补胎价格另计，电话中会先说明。</div>
+      </details>
+
+      <details>
+        <summary>邵阳县塘渡口镇、隆回县桃洪镇能到吗？</summary>
+        <div class="sy-answer">可以调度。邵阳县塘渡口镇、白仓镇、九公桥镇、五峰铺镇，隆回县桃洪镇、周旺镇、滩头镇等乡镇均在覆盖范围内。村屯级地址请电话描述参照物或发送定位，以便确认可达性与预计时间。</div>
+      </details>
+
+      <details>
+        <summary>G60沪昆高速邵阳段和G55二广高速邵阳段能救援吗？</summary>
+        <div class="sy-answer">可以协调。重点覆盖G60邵阳南/邵阳东/隆回/洞口收费站及服务区，G55梽木山枢纽、邵阳县/白仓/邵阳西收费站及邵阳服务区。高速救援须先确保人身安全，遵从高速交警与高速救援专线引导；服务区运营状态以现场为准。</div>
+      </details>
+
+      <details>
+        <summary>夜间或节假日会加价吗？</summary>
+        <div class="sy-answer">夜间22:00—06:00搭电等部分项目可能上浮，节假日视调度运力也可能有附加。具体以电话确认的价格为准，我方坚持先报价后出车。</div>
+      </details>
+
+      <details>
+        <summary>到达时间大概多久？</summary>
+        <div class="sy-answer">邵阳城区通常30—60分钟，乡镇视距离和路况延长；高速节点受交通管制与救援专线调度影响。建议电话中提供准确定位，以便就近派车。</div>
+      </details>
+
+      <details>
+        <summary>高速上可以现场补胎或搭电吗？</summary>
+        <div class="sy-answer">高速主线现场作业风险极高，通常不建议在行车道或应急车道长时间维修。一般优先拖离至收费站外或服务区安全区域，再进行补胎、搭电或换胎。请以高速交警和现场救援人员的安全判断为准。</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer class="sy-footer">
+  <div class="sy-wrap">
+    <div class="sy-footer__grid">
+      <div>
+        <h2>悟空道路救援 · 邵阳</h2>
+        <p>24小时电话：<a href="tel:4008082010">400-808-2010</a></p>
+        <p>服务范围：邵阳双清区、大祥区、北塔区、邵东市、新邵县、邵阳县、隆回县、洞口县、绥宁县、新宁县、城步苗族自治县、武冈市。</p>
+        <p>重点路段：G60沪昆高速、G55二广高速邵阳段，G207、G320、S217、S219、S221、S317等国省道及城区主干道。</p>
+        <p>邮编：422000（邵阳市）· 区号：0739</p>
+      </div>
+      <div>
+        <h3>高频服务</h3>
+        <p><a href="#fuwu">邵阳拖车救援</a> · <a href="#fuwu">搭电启动</a></p>
+        <p><a href="#fuwu">流动补胎换胎</a> · <a href="#fuwu">紧急送油</a></p>
+        <p><a href="#fuwu">脱困救援</a> · <a href="#fuwu">开锁救援</a></p>
+        <p><a href="#fuwu">高速拖车/补胎/送油</a></p>
+      </div>
+      <div>
+        <h3>覆盖节点</h3>
+        <p>梽木山枢纽 · 邵阳南互通 · 邵阳东互通</p>
+        <p>白仓互通 · 周旺铺互通 · 隆回服务区</p>
+        <p>宝庆服务区 · 洞口服务区 · 邵阳服务区</p>
+        <p>塘渡口镇 · 桃洪镇 · 酿溪镇 · 高沙镇</p>
+      </div>
+    </div>
+    <div class="sy-footer__bottom">
+      <span>© 2026 悟空道路救援（邵阳） · 展示地址：湖南省邵阳市大祥区（多点调度，具体网点以电话确认为准）</span>
+      <span>备案号：<a href="https://thomasjill344.github.io">湘ICP备XXXXXXXX号（占位）</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== 移动端悬浮呼叫按钮：可见可点 ===== -->
+<a class="sy-float" href="tel:4008082010" aria-label="拨打邵阳道路救援电话400-808-2010">
+  📞 400-808-2010
+  <span>邵阳24h道路救援 · 点击呼叫</span>
+</a>
+
+<!-- ===== 结构化数据 @graph ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "AutomotiveBusiness", "EmergencyService"],
+      "@id": "https://thomasjill344.github.io/shaoyang/#business",
+      "name": "悟空道路救援（邵阳）",
+      "url": "https://thomasjill344.github.io/shaoyang/",
+      "telephone": "+86-400-808-2010",
+      "description": "邵阳本地24小时道路救援：拖车、搭电、补胎换胎、送油、脱困、开锁、高速救援，覆盖双清区、大祥区、北塔区、邵东市、新邵县、邵阳县、隆回县、洞口县、绥宁县、新宁县、城步苗族自治县、武冈市。",
+      "image": "https://thomasjill344.github.io/images/shaoyang-rescue-og.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "大祥区城区（多点调度）",
+        "addressLocality": "邵阳市",
+        "addressRegion": "湖南省",
+        "postalCode": "422000",
+        "addressCountry": "CN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.237842,
+        "longitude": 111.469230
+      },
+      "areaServed": [
+        {"@type":"AdministrativeArea","name":"邵阳市双清区"},
+        {"@type":"AdministrativeArea","name":"邵阳市大祥区"},
+        {"@type":"AdministrativeArea","name":"邵阳市北塔区"},
+        {"@type":"AdministrativeArea","name":"邵东市"},
+        {"@type":"AdministrativeArea","name":"新邵县"},
+        {"@type":"AdministrativeArea","name":"邵阳县"},
+        {"@type":"AdministrativeArea","name":"隆回县"},
+        {"@type":"AdministrativeArea","name":"洞口县"},
+        {"@type":"AdministrativeArea","name":"绥宁县"},
+        {"@type":"AdministrativeArea","name":"新宁县"},
+        {"@type":"AdministrativeArea","name":"城步苗族自治县"},
+        {"@type":"AdministrativeArea","name":"武冈市"},
+        {"@type":"AdministrativeArea","name":"双清区兴隆街道"},
+        {"@type":"AdministrativeArea","name":"双清区石桥街道"},
+        {"@type":"AdministrativeArea","name":"大祥区火车南站街道"},
+        {"@type":"AdministrativeArea","name":"大祥区城南街道"},
+        {"@type":"AdministrativeArea","name":"北塔区状元洲街道"},
+        {"@type":"AdministrativeArea","name":"邵东市两市塘街道"},
+        {"@type":"AdministrativeArea","name":"新邵县酿溪镇"},
+        {"@type":"AdministrativeArea","name":"邵阳县塘渡口镇"},
+        {"@type":"AdministrativeArea","name":"邵阳县白仓镇"},
+        {"@type":"AdministrativeArea","name":"隆回县桃洪镇"},
+        {"@type":"AdministrativeArea","name":"隆回县周旺镇"},
+        {"@type":"AdministrativeArea","name":"洞口县文昌街道"},
+        {"@type":"AdministrativeArea","name":"洞口县高沙镇"},
+        {"@type":"AdministrativeArea","name":"武冈市辕门口街道"}
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "¥60起",
+      "currenciesAccepted": "CNY",
+      "paymentAccepted": "现金, 微信, 支付宝",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": 4,
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "datePublished": "2026-03-16",
+          "author": {"@type":"Person","name":"陈先生"},
+          "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
+          "reviewBody": "晚上从邵阳南下来打不着火，电话里先报了60元起步，到了没有加价。师傅来得快，搭电后还提醒我检查电瓶。",
+          "name": "搭电 · G60邵阳南收费站外"
+        },
+        {
+          "@type": "Review",
+          "datePublished": "2026-04-03",
+          "author": {"@type":"Person","name":"刘女士"},
+          "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
+          "reviewBody": "爆胎后不敢自己换，打了400-808-2010。师傅从白仓镇过来，换好备胎收了80元起步价，没有额外加钱。",
+          "name": "换胎 · G55白仓收费站出口"
+        },
+        {
+          "@type": "Review",
+          "datePublished": "2026-02-21",
+          "author": {"@type":"Person","name":"王先生"},
+          "reviewRating": {"@type":"Rating","ratingValue":"4","bestRating":"5"},
+          "reviewBody": "车子陷进路边泥里，脱困收了500元起步。来的速度还可以，就是雨天等了大概50分钟，能理解。",
+          "name": "脱困 · 大祥区敏州西路"
+        },
+        {
+          "@type": "Review",
+          "datePublished": "2026-05-11",
+          "author": {"@type":"Person","name":"赵师傅"},
+          "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
+          "reviewBody": "小货车坏在塘渡口，拖到县城维修点8公里，按200元起步价收的，没有因为乡镇加价，比较实在。",
+          "name": "拖车 · 邵阳县塘渡口镇"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://thomasjill344.github.io/shaoyang/#service-tow",
+      "name": "邵阳拖车救援",
+      "serviceType": "拖车救援",
+      "provider": {"@id": "https://thomasjill344.github.io/shaoyang/#business"},
+      "areaServed": "邵阳市",
+      "description": "事故车、故障车拖运，覆盖邵阳城区、G60沪昆高速、G55二广高速邵阳段及国省道。",
+      "offers": {"@type":"Offer","priceCurrency":"CNY","price":"200","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"CNY","price":"200","description":"起步价200元/10km内，超出按里程另计"}}
+    },
+    {
+      "@type": "Service",
+      "@id": "https://thomasjill344.github.io/shaoyang/#service-battery",
+      "name": "邵阳搭电启动",
+      "serviceType": "搭电启动",
+      "provider": {"@id": "https://thomasjill344.github.io/shaoyang/#business"},
+      "areaServed": "邵阳市",
+      "description": "车辆电瓶亏电应急搭电，城区及乡镇可派单。",
+      "offers": {"@type":"Offer","priceCurrency":"CNY","price":"60","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"CNY","price":"60","description":"起步价60元起，夜间可能上浮"}}
+    },
+    {
+      "@type": "Service",
+      "@id": "https://thomasjill344.github.io/shaoyang/#service-tire",
+      "name": "邵阳补胎换胎",
+      "serviceType": "补胎换胎",
+      "provider": {"@id": "https://thomasjill344.github.io/shaoyang/#business"},
+      "areaServed": "邵阳市",
+      "description": "流动补胎、换备胎，含单胎拆装。",
+      "offers": {"@type":"Offer","priceCurrency":"CNY","price":"80","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"CNY","price":"80","description":"起步价80元起，配件另计"}}
+    },
+    {
+      "@type": "Service",
+      "@id": "https://thomasjill344.github.io/shaoyang/#service-fuel",
+      "name": "邵阳紧急送油",
+      "serviceType": "紧急送油",
+      "provider": {"@id": "https://thomasjill344.github.io/shaoyang/#business"},
+      "areaServed": "邵阳市",
+      "description": "燃油耗尽应急配送，油品费用另计。",
+      "offers": {"@type":"Offer","priceCurrency":"CNY","price":"100","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"CNY","price":"100","description":"起步价100元起，油品费另计"}}
+    },
+    {
+      "@type": "Service",
+      "@id": "https://thomasjill344.github.io/shaoyang/#service-recovery",
+      "name": "邵阳脱困救援",
+      "serviceType": "脱困救援",
+      "provider": {"@id": "https://thomasjill344.github.io/shaoyang/#business"},
+      "areaServed": "邵阳市",
+      "description": "陷泥、陷坑、侧滑等困境救援。",
+      "offers": {"@type":"Offer","priceCurrency":"CNY","price":"500","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"CNY","price":"500","description":"起步价500元起，视现场难度报价"}}
+    },
+    {
+      "@type": "Service",
+      "@id": "https://thomasjill344.github.io/shaoyang/#service-lock",
+      "name": "邵阳开锁救援",
+      "serviceType": "开锁救援",
+      "provider": {"@id": "https://thomasjill344.github.io/shaoyang/#business"},
+      "areaServed": "邵阳市",
+      "description": "车门反锁应急开锁，优先无损开锁。",
+      "offers": {"@type":"Offer","priceCurrency":"CNY","price":"100","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"CNY","price":"100","description":"起步价100元起，车型/锁型不同浮动"}}
+    },
+    {
+      "@type": "Service",
+      "@id": "https://thomasjill344.github.io/shaoyang/#service-highway",
+      "name": "邵阳高速救援",
+      "serviceType": "高速救援（拖车/补胎/送油）",
+      "provider": {"@id": "https://thomasjill344.github.io/shaoyang/#business"},
+      "areaServed": "邵阳市G60沪昆高速、G55二广高速邵阳段",
+      "description": "G60沪昆、G55二广邵阳段高速拖车、补胎、送油协调，须遵从高速交警引导。",
+      "offers": {"@type":"Offer","priceCurrency":"CNY","price":"200","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"CNY","price":"200","description":"拖车200元起/补胎80元起，高速通行费等另计"}}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thomasjill344.github.io/shaoyang/#faq",
+      "mainEntity": [
+        {"@type":"Question","name":"邵阳道路救援电话是多少？","acceptedAnswer":{"@type":"Answer","text":"悟空道路救援邵阳服务电话：400-808-2010，24小时接听。"}},
+        {"@type":"Question","name":"邵阳拖车怎么收费？起步价多少？","acceptedAnswer":{"@type":"Answer","text":"拖车起步参考价200元/10km内，超出10km按里程另计。高速通行费、事故车/地库车特殊操作、大型设备费用不含在起步价内。"}},
+        {"@type":"Question","name":"搭电和补胎分别多少钱？","acceptedAnswer":{"@type":"Answer","text":"搭电60元起，补胎/换备胎80元起。夜间可能上浮，防爆胎/大尺寸轮胎另计。"}},
+        {"@type":"Question","name":"邵阳县塘渡口镇、隆回县桃洪镇能到吗？","acceptedAnswer":{"@type":"Answer","text":"可以调度。邵阳县塘渡口镇、白仓镇、九公桥镇、五峰铺镇，隆回县桃洪镇、周旺镇、滩头镇等乡镇均在覆盖范围内。村屯级地址请电话确认可达性。"}},
+        {"@type":"Question","name":"G60沪昆高速邵阳段和G55二广高速邵阳段能救援吗？","acceptedAnswer":{"@type":"Answer","text":"可以协调。重点覆盖G60邵阳南/邵阳东/隆回/洞口收费站及服务区，G55梽木山枢纽、邵阳县/白仓/邵阳西收费站及邵阳服务区。高速救援须遵从高速交警与高速救援专线引导。"}},
+        {"@type":"Question","name":"夜间或节假日会加价吗？","acceptedAnswer":{"@type":"Answer","text":"夜间22:00—06:00搭电等部分项目可能上浮，节假日视运力也可能有附加。以电话确认价格为准，先报价后出车。"}},
+        {"@type":"Question","name":"到达时间大概多久？","acceptedAnswer":{"@type":"Answer","text":"邵阳城区通常30—60分钟，乡镇视距离和路况延长；高速节点受交通管制与救援专线调度影响。"}},
+        {"@type":"Question","name":"高速上可以现场补胎或搭电吗？","acceptedAnswer":{"@type":"Answer","text":"高速主线现场作业风险极高，通常优先拖离至收费站外或服务区安全区域再处理。请以高速交警和现场救援人员的安全判断为准。"}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://thomasjill344.github.io/shaoyang/#breadcrumb",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"首页","item":"https://thomasjill344.github.io"},
+        {"@type":"ListItem","position":2,"name":"邵阳","item":"https://thomasjill344.github.io/shaoyang/"},
+        {"@type":"ListItem","position":3,"name":"道路救援","item":"https://thomasjill344.github.io/shaoyang/daolu-jiuyuan/"}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+/* 轮播仅负责显示切换，不注入任何核心文案 */
+(function(){
+  var slider = document.getElementById('sySlider');
+  if(!slider) return;
+  var slides = slider.querySelectorAll('.sy-slide');
+  var dots = slider.querySelectorAll('.sy-slider__dots button');
+  var index = 0, timer = null, INTERVAL = 5000;
+
+  function show(n){
+    if(n < 0) n = slides.length - 1;
+    if(n >= slides.length) n = 0;
+    index = n;
+    for(var i=0;i<slides.length;i++){
+      slides[i].classList.toggle('is-active', i === index);
+    }
+    for(var j=0;j<dots.length;j++){
+      dots[j].classList.toggle('is-active', j === index);
+    }
+  }
+  function next(){ show(index + 1); }
+  function start(){ stop(); timer = setInterval(next, INTERVAL); }
+  function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+
+  for(var k=0;k<dots.length;k++){
+    dots[k].addEventListener('click', (function(n){
+      return function(){ show(n); start(); };
+    })(k));
+  }
+  slider.addEventListener('mouseenter', stop);
+  slider.addEventListener('mouseleave', start);
+  slider.addEventListener('touchstart', stop, {passive:true});
+  slider.addEventListener('touchend', start, {passive:true});
+  start();
+})();
+</script>
+
+</body>
+</html>
